@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="GrizzlyClients"/>
+	<classpathentry kind="src" path="GrizzlyServer"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-1.2-api-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-1.2-api-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-api-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-api-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-api-test-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-api-test-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-appserver-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-appserver-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-cassandra-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-cassandra-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-core-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-core-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-core-test-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-core-test-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-couchdb-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-couchdb-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-docker-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-docker-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-flume-ng-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-flume-ng-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-iostreams-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-iostreams-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jakarta-smtp-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jakarta-smtp-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jakarta-web-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jakarta-web-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jcl-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jcl-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jdbc-dbcp2-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jdbc-dbcp2-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jmx-gui-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jmx-gui-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jpa-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jpa-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jpl-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-jpl-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-kubernetes-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-kubernetes-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-layout-template-json-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-layout-template-json-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-mongodb3-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-mongodb3-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-mongodb4-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-mongodb4-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-osgi-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-osgi-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-slf4j2-impl-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-slf4j2-impl-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-slf4j-impl-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-slf4j-impl-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-spring-boot-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-spring-boot-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-spring-cloud-config-client-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-spring-cloud-config-client-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-taglib-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-taglib-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-web-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/apache-log4j-2.20.0-bin/log4j-web-2.20.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/ProjectLibraries/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/ProjectLibraries/mysql-connector-j-8.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/ProjectLibraries/slf4j-api-2.0.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/ProjectLibraries/KubernetesFabric8/kubernetes-client-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/britn/OneDrive - The University of Technology,Jamaica/Documents/Britney Documents/UTECH/Classes/YR3 SEM1/Advanced Programming/ProjectLibraries/KubernetesFabric8/kubernetes-client-4.6.4.wso2v1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
