@@ -2,7 +2,7 @@
 // Student ID # : 2101707
 // Date : Nov 6, 2023
 
-package view.employee;
+package com.view.employee;
 
 // IMPORT JAVAX SWING COMPONENTS
 import javax.swing.*;
@@ -19,9 +19,9 @@ import java.awt.*;
 import java.sql.*;
 
 // IMPORT PROJECT CLASSES
-import view.employee.EmployeeMainMenu;
+import com.view.menu.EmployeeMenu;
 
-public class ViewAllRequests extends JFrame {
+public class ViewAllRentalRequests extends JFrame {
 
     // Attributes
     private JPanel contentPane;
@@ -45,15 +45,15 @@ public class ViewAllRequests extends JFrame {
     private JScrollPane tableScrollPane;
 
     private String query;
-    private String[] columnNames = { "name", "type", "quantity", "availability" };
+    private String[] columnNames = { "Equipment ID", "Customer ID", "Event Address", "Event Date" };
 
     private int flag = 0;
 
     // Constructor
-    public ViewAllRequests() { // Default Constructor
+    public ViewAllRentalRequests() { // Default Constructor
 
         // Frame Customization
-        setTitle("Grizzly's Entertainment & Equipment Rental | View All Requests");
+        setTitle("Grizzly's Entertainment & Equipment Rental | View All Equipment");
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 500, 650);
@@ -68,7 +68,12 @@ public class ViewAllRequests extends JFrame {
 
         // ---------------------------------------- PANEL LABELS AND HEADER
         logoLabel = new JLabel("G");
-        formTitleLabel = new JLabel("VIEW ALL REQUESTS");
+        sl_contentPane.putConstraint(SpringLayout.WEST, logoLabel, 98, SpringLayout.WEST, contentPane);
+        formTitleLabel = new JLabel("VIEW RENTAL REQUESTS");
+        sl_contentPane.putConstraint(SpringLayout.NORTH, logoLabel, -9, SpringLayout.NORTH, formTitleLabel);
+        sl_contentPane.putConstraint(SpringLayout.EAST, logoLabel, -6, SpringLayout.WEST, formTitleLabel);
+        sl_contentPane.putConstraint(SpringLayout.WEST, formTitleLabel, 137, SpringLayout.WEST, contentPane);
+        sl_contentPane.putConstraint(SpringLayout.EAST, formTitleLabel, -15, SpringLayout.EAST, contentPane);
 
         // ---------------------------------------- DISPLAY TABLE
         model = new DefaultTableModel();
@@ -91,21 +96,19 @@ public class ViewAllRequests extends JFrame {
             statement = myConn.createStatement();
 
             // Create SQL Query
-            query = "SELECT * FROM equipment";
+            query = "SELECT * FROM rentalrequest";
 
             // Execute query and store result
             resultSet = statement.executeQuery(query);
 
             while (resultSet.next()) {
+                String equipID = resultSet.getString("equipID");
+                String custID = resultSet.getString("custID");
+                String eventAddress = resultSet.getString("eventAddress");
+                String eventDate = resultSet.getString("eventDate");
 
-                // ! Change Variable Names to Rental Requests DB
-                String equipmentName = resultSet.getString("name");
-                String equipmentType = resultSet.getString("type");
-                String equipmentQuantity = resultSet.getString("quantity");
-                String equipmentAvailability = resultSet.getString("availability");
-
-                String[] row = { equipmentName, equipmentType, equipmentQuantity,
-                        equipmentAvailability };
+                String[] row = { equipID, custID, eventAddress,
+                        eventDate };
 
                 model.addRow(row);
 
@@ -129,7 +132,7 @@ public class ViewAllRequests extends JFrame {
         goBack.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 dispose();
-                new EmployeeMainMenu().setVisible(true);
+                new EmployeeMenu().setVisible(true);;
             }
         });
 
@@ -137,14 +140,9 @@ public class ViewAllRequests extends JFrame {
 
         // Logo
         logoLabel.setFont(new Font("Harlow Solid Italic", Font.PLAIN, 32));
-        sl_contentPane.putConstraint(SpringLayout.NORTH, logoLabel, 10, SpringLayout.NORTH, contentPane);
-        sl_contentPane.putConstraint(SpringLayout.WEST, logoLabel, 150, SpringLayout.WEST, contentPane);
-        sl_contentPane.putConstraint(SpringLayout.EAST, logoLabel, 150, SpringLayout.EAST, contentPane);
 
         formTitleLabel.setFont(new Font("Courier New", Font.BOLD, 22));
         sl_contentPane.putConstraint(SpringLayout.NORTH, formTitleLabel, 12, SpringLayout.NORTH, contentPane);
-        sl_contentPane.putConstraint(SpringLayout.WEST, formTitleLabel, 50, SpringLayout.WEST, logoLabel);
-        sl_contentPane.putConstraint(SpringLayout.EAST, formTitleLabel, 50, SpringLayout.EAST, contentPane);
 
         sl_contentPane.putConstraint(SpringLayout.NORTH, table, 30, SpringLayout.NORTH, contentPane);
         sl_contentPane.putConstraint(SpringLayout.WEST, table, 10, SpringLayout.WEST, contentPane);
@@ -164,7 +162,6 @@ public class ViewAllRequests extends JFrame {
         contentPane.add(logoLabel);
         contentPane.add(formTitleLabel);
         contentPane.add(scroll);
-        // contentPane.add(table);
         contentPane.add(goBack);
 
         // ---------------------------------------- ADD PANEL TO JFRAME
@@ -178,7 +175,7 @@ public class ViewAllRequests extends JFrame {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    new ViewAllEquipment();
+                    new ViewAllRentalRequests();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
