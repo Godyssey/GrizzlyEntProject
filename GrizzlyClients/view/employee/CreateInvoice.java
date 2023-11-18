@@ -11,7 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import com.view.menu.EmployeeMenu;
+import com.view.menu.EmployeeMainMenu;
 
 import javax.swing.SpringLayout;
 import java.awt.Color;
