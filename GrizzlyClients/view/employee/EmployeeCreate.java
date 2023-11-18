@@ -19,7 +19,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-import com.view.menu.EmployeeMenu;
+import com.view.menu.EmployeeMainMenu;
 
 public class EmployeeCreate extends JFrame {
 
@@ -141,7 +141,7 @@ public class EmployeeCreate extends JFrame {
 
 		goBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				EmployeeMenu employeeMenu = new EmployeeMenu();
+				EmployeeMainMenu employeeMenu = new EmployeeMainMenu();
 				employeeMenu.setVisible(true);
 				dispose();
 			}
