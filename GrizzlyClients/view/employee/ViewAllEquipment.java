@@ -2,7 +2,7 @@
 // Student ID # : 2101707
 // Date : Nov 6, 2023
 
-package view.employee;
+package com.view.employee;
 
 // IMPORT JAVAX SWING COMPONENTS
 import javax.swing.*;
@@ -19,7 +19,7 @@ import java.awt.*;
 import java.sql.*;
 
 // IMPORT PROJECT CLASSES
-import view.employee.EmployeeMainMenu;
+import com.view.menu.EmployeeMenu;
 
 public class ViewAllEquipment extends JFrame {
 
@@ -68,7 +68,12 @@ public class ViewAllEquipment extends JFrame {
 
         // ---------------------------------------- PANEL LABELS AND HEADER
         logoLabel = new JLabel("G");
+        sl_contentPane.putConstraint(SpringLayout.WEST, logoLabel, 98, SpringLayout.WEST, contentPane);
         formTitleLabel = new JLabel("VIEW ALL EQUIPMENT");
+        sl_contentPane.putConstraint(SpringLayout.NORTH, logoLabel, -9, SpringLayout.NORTH, formTitleLabel);
+        sl_contentPane.putConstraint(SpringLayout.EAST, logoLabel, -6, SpringLayout.WEST, formTitleLabel);
+        sl_contentPane.putConstraint(SpringLayout.WEST, formTitleLabel, 137, SpringLayout.WEST, contentPane);
+        sl_contentPane.putConstraint(SpringLayout.EAST, formTitleLabel, -15, SpringLayout.EAST, contentPane);
 
         // ---------------------------------------- DISPLAY TABLE
         model = new DefaultTableModel();
@@ -127,7 +132,7 @@ public class ViewAllEquipment extends JFrame {
         goBack.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 dispose();
-                new EmployeeMainMenu().setVisible(true);
+                new EmployeeMenu().setVisible(true);;
             }
         });
 
@@ -135,14 +140,9 @@ public class ViewAllEquipment extends JFrame {
 
         // Logo
         logoLabel.setFont(new Font("Harlow Solid Italic", Font.PLAIN, 32));
-        sl_contentPane.putConstraint(SpringLayout.NORTH, logoLabel, 10, SpringLayout.NORTH, contentPane);
-        sl_contentPane.putConstraint(SpringLayout.WEST, logoLabel, 150, SpringLayout.WEST, contentPane);
-        sl_contentPane.putConstraint(SpringLayout.EAST, logoLabel, 150, SpringLayout.EAST, contentPane);
 
         formTitleLabel.setFont(new Font("Courier New", Font.BOLD, 22));
         sl_contentPane.putConstraint(SpringLayout.NORTH, formTitleLabel, 12, SpringLayout.NORTH, contentPane);
-        sl_contentPane.putConstraint(SpringLayout.WEST, formTitleLabel, 50, SpringLayout.WEST, logoLabel);
-        sl_contentPane.putConstraint(SpringLayout.EAST, formTitleLabel, 50, SpringLayout.EAST, contentPane);
 
         sl_contentPane.putConstraint(SpringLayout.NORTH, table, 30, SpringLayout.NORTH, contentPane);
         sl_contentPane.putConstraint(SpringLayout.WEST, table, 10, SpringLayout.WEST, contentPane);
@@ -162,7 +162,6 @@ public class ViewAllEquipment extends JFrame {
         contentPane.add(logoLabel);
         contentPane.add(formTitleLabel);
         contentPane.add(scroll);
-        // contentPane.add(table);
         contentPane.add(goBack);
 
         // ---------------------------------------- ADD PANEL TO JFRAME
