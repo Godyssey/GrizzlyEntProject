@@ -2,13 +2,15 @@
 // Student ID # : 2101707
 // Date : Nov 6, 2023
 
-package com.view.employee;
+package view.employee;
 
 // Imports
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ScheduleEquipment extends JFrame {
 
@@ -113,7 +115,7 @@ public class ScheduleEquipment extends JFrame {
         sl_contentPanel.putConstraint(SpringLayout.NORTH, save, 0, SpringLayout.NORTH, cancel);
         save.setBackground(new Color(255, 255, 255));
         save.setFont(new Font("Courier New", Font.PLAIN, 12));
-        
+
         equipIDField = new JTextField();
         sl_contentPanel.putConstraint(SpringLayout.NORTH, equipIDField, 66, SpringLayout.SOUTH, logoLabel);
         sl_contentPanel.putConstraint(SpringLayout.WEST, equipIDField, 42, SpringLayout.EAST, equipID);
@@ -122,7 +124,7 @@ public class ScheduleEquipment extends JFrame {
         sl_contentPanel.putConstraint(SpringLayout.SOUTH, equipIDField, -9, SpringLayout.NORTH, error);
         contentPanel.add(equipIDField);
         equipIDField.setColumns(10);
-        
+
         custIDField = new JTextField();
         sl_contentPanel.putConstraint(SpringLayout.NORTH, custIDField, 25, SpringLayout.SOUTH, error);
         sl_contentPanel.putConstraint(SpringLayout.WEST, custIDField, 67, SpringLayout.EAST, custID);
@@ -141,15 +143,36 @@ public class ScheduleEquipment extends JFrame {
         contentPanel.add(check);
         contentPanel.add(cancel);
         contentPanel.add(save);
-        
+
         textField = new JTextField();
         sl_contentPanel.putConstraint(SpringLayout.WEST, textField, -192, SpringLayout.EAST, custIDField);
         sl_contentPanel.putConstraint(SpringLayout.SOUTH, textField, 0, SpringLayout.SOUTH, date);
         sl_contentPanel.putConstraint(SpringLayout.EAST, textField, 0, SpringLayout.EAST, custIDField);
         textField.setColumns(10);
         contentPanel.add(textField);
-        
-        // 
+
+        // Add Button Functionality
+        check.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
+            }
+        });
+        cancel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new EmployeeCreate().setVisible(true);
+            }
+        });
+        save.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, "Successfully Scheduled Equipment", "Status",
+                        JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
 
     } // ends Default Constructor
 

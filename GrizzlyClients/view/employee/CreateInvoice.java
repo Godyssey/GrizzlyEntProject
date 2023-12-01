@@ -3,7 +3,7 @@
 // Student ID # : 2101707
 // Date : Nov 6, 2023
 
-package com.view.employee;
+package view.employee;
 
 import java.awt.EventQueue;
 
@@ -11,11 +11,11 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import com.view.menu.EmployeeMainMenu;
-
 import javax.swing.SpringLayout;
 import java.awt.Color;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JButton;
@@ -169,6 +169,7 @@ public class CreateInvoice extends JFrame {
 
 		// Add Functionality
 		goBack.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				dispose();
 				new EmployeeCreate().setVisible(true);
@@ -199,8 +200,9 @@ public class CreateInvoice extends JFrame {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-				// Create statement object
 
+				JOptionPane.showMessageDialog(null, "Successfully Created Invoice", "Status",
+						JOptionPane.INFORMATION_MESSAGE);
 			}
 		});
 	}

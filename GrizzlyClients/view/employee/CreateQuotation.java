@@ -1,4 +1,4 @@
-package com.view.employee;
+package view.employee;
 
 import java.awt.EventQueue;
 
@@ -7,7 +7,12 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.Color;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.SpringLayout;
 import javax.swing.JTextField;
 import javax.swing.JButton;
@@ -48,31 +53,31 @@ public class CreateQuotation extends JFrame {
 		setContentPane(contentPane);
 		SpringLayout sl_contentPane = new SpringLayout();
 		contentPane.setLayout(sl_contentPane);
-		
+
 		JLabel logoLabel = new JLabel("G");
 		sl_contentPane.putConstraint(SpringLayout.NORTH, logoLabel, 10, SpringLayout.NORTH, contentPane);
 		sl_contentPane.putConstraint(SpringLayout.WEST, logoLabel, 111, SpringLayout.WEST, contentPane);
 		logoLabel.setFont(new Font("Harlow Solid Italic", Font.PLAIN, 32));
 		contentPane.add(logoLabel);
-		
+
 		JLabel lblCreateQuotation = new JLabel("CREATE QUOTATION");
 		sl_contentPane.putConstraint(SpringLayout.WEST, lblCreateQuotation, 6, SpringLayout.EAST, logoLabel);
 		sl_contentPane.putConstraint(SpringLayout.SOUTH, lblCreateQuotation, 0, SpringLayout.SOUTH, logoLabel);
 		lblCreateQuotation.setFont(new Font("Courier New", Font.BOLD, 22));
 		contentPane.add(lblCreateQuotation);
-		
+
 		JLabel custID = new JLabel("Customer ID : ");
 		sl_contentPane.putConstraint(SpringLayout.NORTH, custID, 30, SpringLayout.SOUTH, logoLabel);
 		sl_contentPane.putConstraint(SpringLayout.EAST, custID, 0, SpringLayout.EAST, logoLabel);
 		custID.setFont(new Font("Courier New", Font.PLAIN, 13));
 		contentPane.add(custID);
-		
+
 		textField = new JTextField();
 		sl_contentPane.putConstraint(SpringLayout.NORTH, textField, -3, SpringLayout.NORTH, custID);
 		sl_contentPane.putConstraint(SpringLayout.WEST, textField, 39, SpringLayout.EAST, custID);
 		textField.setColumns(10);
 		contentPane.add(textField);
-		
+
 		JButton fetch = new JButton("Fetch");
 		sl_contentPane.putConstraint(SpringLayout.EAST, textField, -49, SpringLayout.WEST, fetch);
 		sl_contentPane.putConstraint(SpringLayout.NORTH, fetch, -3, SpringLayout.NORTH, custID);
@@ -80,33 +85,62 @@ public class CreateQuotation extends JFrame {
 		fetch.setFont(new Font("Courier New", Font.PLAIN, 11));
 		fetch.setBackground(Color.WHITE);
 		contentPane.add(fetch);
-		
+
 		JLabel lblWriteMessageHere = new JLabel("Write quotation message here :");
 		sl_contentPane.putConstraint(SpringLayout.NORTH, lblWriteMessageHere, 18, SpringLayout.SOUTH, textField);
 		sl_contentPane.putConstraint(SpringLayout.WEST, lblWriteMessageHere, 0, SpringLayout.WEST, custID);
 		lblWriteMessageHere.setFont(new Font("Courier New", Font.PLAIN, 13));
 		contentPane.add(lblWriteMessageHere);
-		
+
 		JTextArea messageArea = new JTextArea();
 		sl_contentPane.putConstraint(SpringLayout.NORTH, messageArea, 6, SpringLayout.SOUTH, lblWriteMessageHere);
 		sl_contentPane.putConstraint(SpringLayout.WEST, messageArea, 0, SpringLayout.WEST, custID);
 		sl_contentPane.putConstraint(SpringLayout.SOUTH, messageArea, 117, SpringLayout.SOUTH, lblWriteMessageHere);
 		sl_contentPane.putConstraint(SpringLayout.EAST, messageArea, 240, SpringLayout.WEST, custID);
 		contentPane.add(messageArea);
-		
+
 		JButton goBack = new JButton("Back");
 		sl_contentPane.putConstraint(SpringLayout.WEST, goBack, 0, SpringLayout.WEST, custID);
 		sl_contentPane.putConstraint(SpringLayout.SOUTH, goBack, -21, SpringLayout.SOUTH, contentPane);
 		goBack.setFont(new Font("Courier New", Font.PLAIN, 11));
 		goBack.setBackground(Color.WHITE);
 		contentPane.add(goBack);
-		
+
 		JButton send = new JButton("Send");
 		sl_contentPane.putConstraint(SpringLayout.NORTH, send, 0, SpringLayout.NORTH, goBack);
 		sl_contentPane.putConstraint(SpringLayout.EAST, send, 0, SpringLayout.EAST, fetch);
 		send.setFont(new Font("Courier New", Font.PLAIN, 11));
 		send.setBackground(Color.WHITE);
 		contentPane.add(send);
+
+		// Add Button Functionality
+		goBack.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				dispose();
+				new EmployeeCreate().setVisible(true);
+			}
+
+		});
+		fetch.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
+			}
+
+		});
+		send.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "Successfully Created Quotation", "Status",
+						JOptionPane.INFORMATION_MESSAGE);
+			}
+
+		});
 	}
 
 }

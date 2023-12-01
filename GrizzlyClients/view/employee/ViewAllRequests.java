@@ -2,7 +2,7 @@
 // Student ID # : 2101707
 // Date : Nov 6, 2023
 
-package com.view.employee;
+package view.employee;
 
 // IMPORT JAVAX SWING COMPONENTS
 import javax.swing.*;
@@ -19,9 +19,8 @@ import java.awt.*;
 import java.sql.*;
 
 // IMPORT PROJECT CLASSES
-import com.view.menu.EmployeeMenu;
 
-public class ViewAllRentalRequests extends JFrame {
+public class ViewAllRequests extends JFrame {
 
     // Attributes
     private JPanel contentPane;
@@ -50,7 +49,7 @@ public class ViewAllRentalRequests extends JFrame {
     private int flag = 0;
 
     // Constructor
-    public ViewAllRentalRequests() { // Default Constructor
+    public ViewAllRequests() { // Default Constructor
 
         // Frame Customization
         setTitle("Grizzly's Entertainment & Equipment Rental | View All Equipment");
@@ -132,7 +131,8 @@ public class ViewAllRentalRequests extends JFrame {
         goBack.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 dispose();
-                new EmployeeMenu().setVisible(true);;
+                new EmployeeMainMenu().setVisible(true);
+                ;
             }
         });
 
@@ -175,7 +175,7 @@ public class ViewAllRentalRequests extends JFrame {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    new ViewAllRentalRequests();
+                    new ViewAllRequests();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

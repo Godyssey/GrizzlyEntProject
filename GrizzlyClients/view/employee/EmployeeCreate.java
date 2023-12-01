@@ -2,7 +2,7 @@
 // Student ID # : 2101707
 // Date : Nov 6, 2023
 
-package com.view.employee;
+package view.employee;
 
 // Imports
 import java.awt.EventQueue;
@@ -18,8 +18,6 @@ import java.awt.Color;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
-import com.view.menu.EmployeeMainMenu;
 
 public class EmployeeCreate extends JFrame {
 
