@@ -1,0 +1,9 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\apache-log4j-2.20.0-bin\\log4j-api-2.20.0.jar",
+        "c:\\mysql-connector-j-8.1.0\\mysql-connector-j-8.1.0.jar",
+        "c:\\jcalendar-1.4\\lib\\jcalendar-1.4.jar",
+        "c:\\apache-log4j-2.20.0-bin\\log4j-core-2.20.0.jar"
+    ]
+}
